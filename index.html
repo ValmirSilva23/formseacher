@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Amazonas</title>
+</head>
+<body>
+     
+</head>
+
+<body>
+  <div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Formulário de pesquisa.<br> ponto turisticos da Amazônia</h1>
+    <p id="description" class="description text-center">
+      Obrigado por compartilhar suas considerações sobre amazônia.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nome</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu Email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label>
+      <input type="number" nome="idade" id="numero" min="10" max="99" class="form-control" placeholder="Digite sua idade" />
+    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Estado onde reside</label>
+        <input type="text" estado="estado" id="estado" class="form-control" placeholder="Digite a cidade onde você mora" required />
+      </div>
+      <div class="form-group">
+        <p>selecione um opção pela á visita amazônia?</p>
+        <select id="dropdown" nome="role" class="form-control" required>
+          <option disabled selected value>selecione um opção</option>
+          <option value="student">encontro das águas dos Rios Negro e Solimões. </option>
+          <option value="Trabalho">Pela comida amazonense</option>
+          <option value="learner">Praia de água doce</option>
+          <option value="preferNo">Cachoeiras</option>
+          <option value="preferNo">Clichê mas é cada dia mais urgente ajudar a Amazônia</option>
+          <option value="other">Outros</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Você recomendaria a um amigo á viajar para a amazônia?</p>
+        <label>
+          <input name="user-recommend" value="Concerteza" type="radio" class="input-radio" checked />Concerteza</label>
+        <label>
+          <input name="user-recommend" value="talvez" type="radio" class="input-radio" />Talvez</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Não tenheo certeza</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Qual região você mais gostou da Amazônia?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Selecione uma opção</option>
+          <option value="Amazonas">Amazonas</option>
+          <option value="Acre">Acre</option>
+          <option value="Amapá">Amapá</option>
+          <option value="mato grosso">Mato Grosso</option>
+          <option value="Amazonas">Maranhão</option>
+        </select>
+        <option value="Amazonas">Rôndonia</option>
+        <option value="Amazonas">Roraima</option>
+        <option value="Amazonas">Tocatins</option>
+      </div>
+
+      <div class="form-group">
+        <p>
+          O que voçê acha que precisa ser melhorado na regição que você visitou para preservar a Amazônia?
+          <span class="clue">(Marque todas as opções)</span>
+        </p>
+
+        <label><input name="prefer" value="Preservar as arvóres" type="checkbox" class="input-checkbox" />Preservar as arvóres</label>
+        <label>
+          <input name="prefer" value="cursos de água" type="checkbox" class="input-checkbox" />Cursos de água</label>
+        <label><input name="prefer" value="Nunca compre animais silvestres sem registro" type="checkbox" class="input-checkbox" />Nunca compre animais silvestres sem registro</label>
+        <label><input name="prefer" value="Reutilize, reaproveite e recicle tudo que for possível" type="checkbox" class="input-checkbox" />Reutilize, reaproveite e recicle tudo que for possível</label>
+        <label><input name="prefer" value="todos" type="checkbox" class="input-checkbox" />Todos</label>
+
+      </div>
+
+      <div class="form-group">
+        <p> Algum comentário ou sugestão?</p>
+        <textarea id="comments"class="input-textarea" name="comment" placeholder="escreva um comentário aqui ...">
+        </textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class=" submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+    </div>
+   
+</body>
+</html>
